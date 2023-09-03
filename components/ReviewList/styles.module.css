@@ -1,0 +1,42 @@
+.reviewTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reviewTable th,
+.reviewTable td {
+  text-align: left;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+.reviewTable th {
+  background-color: #f2f2f2;
+}
+
+.reviewTable th,
+.reviewTable td:not(:first-child) {
+  width: auto;
+}
+
+.reviewTable td:first-child {
+  width: 100%;
+}
+
+.reviewTable tr:hover {
+  background-color: #e0e0e0;
+}
+
+.reviewTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.voteContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.voteContainer > span:hover {
+  cursor: pointer;
+}
