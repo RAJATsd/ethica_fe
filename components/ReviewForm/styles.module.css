@@ -1,0 +1,36 @@
+.reviewFormModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(175, 175, 175, 0.758);
+}
+
+.reviewFormModal > div {
+  background: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  min-width: 390px;
+  width: 500px;
+}
+
+.closeHolder {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reviewInput {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.closeHolder > button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
