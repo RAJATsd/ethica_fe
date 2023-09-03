@@ -1,8 +1,9 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 import ReviewForm from "@/components/ReviewForm";
 import ReviewList from "@/components/ReviewList";
 import getUrl from "@/util/getUrl";
-import axios from "axios";
-import { useEffect, useState } from "react";
 import Styles from "./styles.module.css";
 
 const HomeContainer = () => {

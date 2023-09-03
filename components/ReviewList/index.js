@@ -1,5 +1,6 @@
-import dateAndTimeConverter from "@/util/dateAndTime";
 import { DownCircleTwoTone, UpCircleTwoTone } from "@ant-design/icons";
+
+import dateAndTimeConverter from "@/util/dateAndTime";
 import Styles from "./styles.module.css";
 
 const ReviewList = ({ reviews, onUpvoteOrDownvote }) => {

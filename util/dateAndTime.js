@@ -1,3 +1,5 @@
+// converts the Date.now() timestamp to date and time format
+
 const dateAndTimeConverter = (timestamp) => {
   const date = new Date(timestamp);
   const year = date.getFullYear();

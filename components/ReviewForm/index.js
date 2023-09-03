@@ -1,6 +1,7 @@
+import { useEffect, useState } from "react";
+
 import Styles from "./styles.module.css";
 import { CloseOutlined } from "@ant-design/icons";
-import { useEffect, useState } from "react";
 
 const ReviewForm = ({ open, onClose, onSubmit }) => {
   const [review, setReview] = useState("");
