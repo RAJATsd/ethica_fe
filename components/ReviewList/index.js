@@ -3,20 +3,8 @@ import { DownCircleTwoTone, UpCircleTwoTone } from "@ant-design/icons";
 import Styles from "./styles.module.css";
 
 const ReviewList = ({ reviews, onUpvoteOrDownvote }) => {
-  const getSentimentText = (number) => {
-    if (number > 0) {
-      return "Positive";
-    }
-
-    if (number < 0) {
-      return "Negative";
-    }
-
-    return "Neutral";
-  };
-
   return (
-    <div>
+    <div className={Styles.reviewTableContainer}>
       <table className={Styles.reviewTable}>
         <thead>
           <tr>
@@ -33,7 +21,7 @@ const ReviewList = ({ reviews, onUpvoteOrDownvote }) => {
                 ({ id, text, time, sentiment, upvotes, downvotes }) => (
                   <tr key={id}>
                     <td>{text}</td>
-                    <td>{getSentimentText(sentiment)}</td>
+                    <td>{sentiment}</td>
                     <td>{dateAndTimeConverter(time)}</td>
                     <td>
                       <div className={Styles.voteContainer}>

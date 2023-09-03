@@ -1,5 +1,8 @@
 .movieAndButtonContainer {
-  padding: 50px 200px;
+  padding: 50px 0;
+  width: 70vw;
+  min-width: 637px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

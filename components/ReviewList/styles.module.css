@@ -1,3 +1,9 @@
+.reviewTableContainer {
+  width: 70vw;
+  margin: auto;
+  min-width: 637px;
+}
+
 .reviewTable {
   width: 100%;
   border-collapse: collapse;
@@ -7,6 +13,10 @@
 .reviewTable td {
   text-align: left;
   padding: 8px;
+}
+
+.reviewTable th,
+.reviewTable td:not(:first-child) {
   white-space: nowrap;
 }
 

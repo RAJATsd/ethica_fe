@@ -1,15 +1,23 @@
 import Styles from "./styles.module.css";
 import { CloseOutlined } from "@ant-design/icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ReviewForm = ({ open, onClose, onSubmit }) => {
   const [review, setReview] = useState("");
+
+  useEffect(() => {
+    setReview("");
+  }, [open]);
+
+  const handleClose = () => {
+    onClose();
+  };
 
   return open ? (
     <div className={Styles.reviewFormModal}>
       <div>
         <div className={Styles.closeHolder}>
-          <span onClick={onClose}>
+          <span onClick={handleClose}>
             <CloseOutlined />
           </span>
         </div>
@@ -23,7 +31,7 @@ const ReviewForm = ({ open, onClose, onSubmit }) => {
           />
         </div>
         <div className={Styles.closeHolder} onClick={() => onSubmit(review)}>
-          <button>Save and analyze</button>
+          <button>Analyze and Save</button>
         </div>
       </div>
     </div>
